@@ -1,0 +1,16 @@
+{
+  "name": "metroverse-city-block-api",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ qd-qd/metroverse-city-block-api",
+    "create-local": "graph create --node http://localhost:8020/ qd-qd/metroverse-city-block-api",
+    "remove-local": "graph remove --node http://localhost:8020/ qd-qd/metroverse-city-block-api",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 qd-qd/metroverse-city-block-api"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
