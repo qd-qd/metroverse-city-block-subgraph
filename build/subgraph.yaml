@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: NFT
@@ -19,8 +19,8 @@ dataSources:
         - Metrics
       abis:
         - name: NFT
-          file: ./abis/NFT.json
+          file: NFT/abis/NFT.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,indexed uint256)
           handler: handleTransfer
-      file: ./src/mapping.ts
+      file: NFT/NFT.wasm
